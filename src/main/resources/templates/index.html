@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pro Learn</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pro Learn</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+        h1 {
+            color: #3498db;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+        }
+        .auth-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .auth-links a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #2980b9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .auth-links a:hover {
+            background-color: #1a5276;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pro Learn</h1>
+        <p>India's Best Platform for Learning</p>
+    </header>
+    <section>
+        <p>The best quality of training, which makes learners the top choice for affordable and student-friendly education.</p>
+        <p>Success is where preparation meets opportunity. We take utmost care of our students learning and preparation with mocks, grooming sessions, revision, mentorship, and guidance to help you convert the opportunity to a JOB.</p>
+        <p>No one is perfect, and that is why pencils have erasers. Similarly, our top priority is to see our students getting high quality of education.</p>
+        <p>Just having technical skills will not help more.That's why we train you, we make you upgrade your skills and abilities. We also work on your personality development, focusing not only on technical skills but also on your interpersonal skills, ensuring that your first dream is now a reality.</p>
+        <p>This all at Pro Learn - Where Dreams Become Reality!</p>
+    </section>
+    <footer>
+        <div id="container">
+            <div class="auth-links">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+            &copy; 2024 Pro Learn. All rights reserved.
+        </div>
+
+        
+    </footer>
+</body>
+</html>

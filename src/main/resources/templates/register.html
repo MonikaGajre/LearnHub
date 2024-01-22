@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ProLearn - Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('your_background_image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .registration-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .registration-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #3498db; /* Set color for the heading */
+        }
+
+        .registration-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #333;
+        }
+
+        .registration-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-message {
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        .login-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+     <form action="/addUser" method="post">
+    <div class="registration-container">
+        <h2>Welcome to ProLearn Registration</h2>
+        <p>Start Your Learning Journey with ProLearn</p>
+       
+            <input class="registration-input" type="text" name="name" placeholder="Name" required>
+            <input class="registration-input" type="email" name="email" placeholder="Email" required>
+            
+             <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="trainer">Trainer</option>
+            <option value="student">Student</option>
+        </select><br>
+            
+            
+            <input class="registration-input" type="password" name="password" placeholder="Password" required>
+            <button class="registration-button" type="submit">Register</button>
+           
+        
+        <div class="login-message">
+            Already have an account? <a class="login-link" href="/login">Login here</a>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
