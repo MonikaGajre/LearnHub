@@ -54,11 +54,7 @@ public class NavController {
 	public String myCourses() {
 		return "myCourses";
 	}
-//	String order = null;
-//	@GetMapping("/createOrder")
-//	public String createOrder() {
-//		return order;
-//	}
+
 	
 	
 	

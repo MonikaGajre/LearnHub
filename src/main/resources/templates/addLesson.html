@@ -46,7 +46,7 @@
 	  function handleFormSubmission(event) {
 	    const form = event.target;
 	    event.preventDefault(); // Prevent the form from submitting normally
-	    alert("Course added successfully!");
+	    alert("Lesson added successfully!");
 	    form.submit(); // Submit the form manually
 	  }
 	</script>
@@ -55,7 +55,7 @@
   <body>
     <h1>Add a new lesson!</h1>
     
-    <form action="/lesson" method="post" onsubmit="handleFormSubmission(event)">
+    <form action="/addLesson" method="post" onsubmit="handleFormSubmission(event)">
       <div class="mb-3">
 	    <label for="courseId" class="form-label">Course ID</label>
 	    <input type="text" class="form-control" name="courseId">

@@ -32,7 +32,7 @@ public class TrainerController {
 		return "/trainerHome";
 	}
 	
-	@PostMapping("/lesson")
+	@PostMapping("/addLesson")
 	public String lesson(@RequestParam("courseId")int courseId,
 			@RequestParam("lessonId")int lessonId,
 			@RequestParam("lessonName")String lessonName,

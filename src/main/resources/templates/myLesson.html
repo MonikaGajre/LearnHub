@@ -1,4 +1,4 @@
-myLesson.html
+
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
@@ -33,6 +33,7 @@ body {
                     <th scope="col">Lesson Id</th>
                     <th scope="col">Lesson Name</th>
                     <th scope="col">Lesson Topics</th>
+                    <th scope="col">Lesson Link </th>
                     
                 </tr>
             </thead>
@@ -41,6 +42,7 @@ body {
                     <td th:text="${lesson.lessonId}"></td>
                     <td th:text="${lesson.lessonName}"></td>
                     <td th:text="${lesson.topics}"></td>
+                    <td th:text="${lesson.link}"></td>
                     
                 </tr>
             </tbody>
